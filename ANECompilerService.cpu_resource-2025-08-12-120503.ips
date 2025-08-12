@@ -1,0 +1,340 @@
+{"app_name":"ANECompilerService","timestamp":"2025-08-12 12:05:03.00 +0300","slice_uuid":"01E5E2CF-0186-31D4-8679-4AD46649F384","build_version":"1","bundleID":"com.apple.ANECompilerService","duration_ms":"158414","share_with_app_devs":0,"is_first_party":0,"bug_type":"202","os_version":"iPhone OS 18.6 (22G86)","roots_installed":0,"name":"ANECompilerService","incident_id":"1D1B7501-14ED-4C03-9543-7EC1422C9E7E"}
+Date/Time:        2025-08-12 11:19:46.111 +0300
+End time:         2025-08-12 11:22:24.525 +0300
+OS Version:       iPhone OS 18.6 (Build 22G86)
+Architecture:     arm64e
+Report Version:   60
+Incident Identifier: 1D1B7501-14ED-4C03-9543-7EC1422C9E7E
+
+Data Source:      Microstackshots
+Shared Cache:     642665CB-37FA-3431-BB94-B25DFC2C93D7 slid base address 0x180008000, slide 0x8000
+
+Command:          ANECompilerService
+Path:             /System/Library/PrivateFrameworks/AppleNeuralEngine.framework/XPCServices/ANECompilerService.xpc/ANECompilerService
+Identifier:       com.apple.ANECompilerService
+Version:          ??? (1)
+Resource Coalition: "com.apple.aned"(592)
+On Behalf Of:     18 samples UNKNOWN [358] (18 samples originated by UNKNOWN [31])
+Architecture:     arm64
+PID:              572
+
+Event:            cpu usage
+Action taken:     none
+CPU:              90 seconds cpu time over 158 seconds (57% cpu average), exceeding limit of 50% cpu over 180 seconds
+CPU limit:        90s
+Limit duration:   180s
+CPU used:         90s
+CPU duration:     158s
+Duration:         158.41s
+Duration Sampled: 146.57s (event starts 9.85s before samples, event ends 1.99s after samples)
+Steps:            18
+
+Hardware model:   iPhone11,6
+Active cpus:      6
+Memory size:      3.67 GB
+HW page size:     16384
+VM page size:     16384
+Shared cache residency: 10.93% (533.70 MB / 4882 MB)
+
+Advisory levels:  Battery -> 2, User -> 3, ThermalPressure -> 0, Combined -> 2
+Free disk space:  39.90 GB/59.48 GB, low space threshold 150 MB
+Vnodes Available: 67.75% (13550/20000, 10000 allocated, 10000 soft limit)
+Models:           none
+
+Preferred User Language: ru-RU
+Country Code:     RU
+Keyboards:        en_GB QWERTY, ru_RU Russian
+OS Cryptex File Extents: 1
+
+Heaviest stack for the target process:
+  18  ??? (libsystem_pthread.dylib + 2732) [0x20d024aac]
+  18  ??? (libsystem_pthread.dylib + 2572) [0x20d024a0c]
+  18  ??? (libdispatch.dylib + 84576) [0x18ab3da60]
+  18  ??? (libdispatch.dylib + 86492) [0x18ab3e1dc]
+  18  ??? (libdispatch.dylib + 44512) [0x18ab33de0]
+  18  ??? (libdispatch.dylib + 41272) [0x18ab33138]
+  18  ??? (libdispatch.dylib + 125852) [0x18ab47b9c]
+  18  ??? (libdispatch.dylib + 41272) [0x18ab33138]
+  18  ??? (libdispatch.dylib + 122424) [0x18ab46e38]
+  18  ??? (libdispatch.dylib + 112076) [0x18ab445cc]
+  18  ??? (libxpc.dylib + 79180) [0x20d08254c]
+  18  ??? (libxpc.dylib + 72040) [0x20d080968]
+  18  ??? (Foundation + 106376) [0x181820f88]
+  18  ??? (Foundation + 106728) [0x1818210e8]
+  18  ??? (Foundation + 108132) [0x181821664]
+  18  ??? (Foundation + 161032) [0x18182e508]
+  18  ??? (CoreFoundation + 192428) [0x182bbcfac]
+  18  ??? (CoreFoundation + 194868) [0x182bbd934]
+  18  ??? (ANECompilerService + 174664) [0x1045f2a48]
+  18  ??? (libdispatch.dylib + 71132) [0x18ab3a5dc]
+  18  ??? (libdispatch.dylib + 72524) [0x18ab3ab4c]
+  18  ??? (libdispatch.dylib + 112004) [0x18ab44584]
+  18  ??? (ANECompilerService + 176316) [0x1045f30bc]
+  18  ??? (ANECompilerService + 172292) [0x1045f2104]
+  18  ??? (ANECompilerService + 166244) [0x1045f0964]
+  18  ??? (ANECompiler + 2545100) [0x210b205cc]
+  7   ??? (ANECompiler + 1783872) [0x210a66840]
+  7   ??? (ANECompiler + 5395576) [0x210dd8478]
+  3   ??? (ANECompiler + 3018664) [0x210b93fa8]
+  3   ??? (ANECompiler + 2075988) [0x210aadd54]
+  3   ??? (ANECompiler + 68564) [0x2108c3bd4]
+  3   ??? (ANECompiler + 69148) [0x2108c3e1c]
+  3   ??? (ANECompiler + 148528) [0x2108d7430]
+  3   ??? (ANECompiler + 149892) [0x2108d7984]
+  3   ??? (ANECompiler + 2089648) [0x210ab12b0]
+  3   ??? (ANECompiler + 3472060) [0x210c02abc]
+  3   ??? (ANECompiler + 6050356) [0x210e78234]
+  3   ??? (ANECompiler + 2699148) [0x210b45f8c]
+  3   ??? (ANECompiler + 7392656) [0x210fbfd90]
+  2   ??? (ANECompiler + 7388060) [0x210fbeb9c]
+  2   ??? (ANECompiler + 7391180) [0x210fbf7cc]
+  2   ??? (ANECompiler + 4093676) [0x210c9a6ec]
+  2   ??? (ANECompiler + 3664232) [0x210c31968]
+  2   ??? (ANECompiler + 747496) [0x2109697e8]
+  2   ??? (ANECompiler + 747596) [0x21096984c]
+  2   ??? (ANECompiler + 747852) [0x21096994c]
+  2   ??? (ANECompiler + 749848) [0x21096a118]
+  2   ??? (libsystem_kernel.dylib + 33536) [0x1d3a01300]
+
+
+Powerstats for:   ANECompilerService [572]
+UUID:             01E5E2CF-0186-31D4-8679-4AD46649F384
+Path:             /System/Library/PrivateFrameworks/AppleNeuralEngine.framework/XPCServices/ANECompilerService.xpc/ANECompilerService
+Identifier:       com.apple.ANECompilerService
+Version:          ??? (1)
+Resource Coalition: 18 samples "com.apple.aned"(592)
+On Behalf Of:     18 samples UNKNOWN [358] (18 samples originated by UNKNOWN [31])
+Architecture:     arm64
+Footprint:        77.94 MB -> 126.92 MB (+48.98 MB) (max 154.45 MB )
+Pageins:          51178 pages
+Start time:       2025-08-12 11:19:55.962 +0300
+End time:         2025-08-12 11:22:22.532 +0300
+Num samples:      18 (100%)
+Num threads:      1
+Primary state:    17 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Utility, Requested Thread QoS Background, Override Thread QoS Unspecified, e-core
+User Activity:    1 samples Idle, 17 samples Active
+Power Source:     18 samples on Battery, 0 samples on AC
+  18  ??? (libsystem_pthread.dylib + 2732) [0x20d024aac]
+    18  ??? (libsystem_pthread.dylib + 2572) [0x20d024a0c]
+      18  ??? (libdispatch.dylib + 84576) [0x18ab3da60]
+        18  ??? (libdispatch.dylib + 86492) [0x18ab3e1dc]
+          18  ??? (libdispatch.dylib + 44512) [0x18ab33de0]
+            18  ??? (libdispatch.dylib + 41272) [0x18ab33138]
+              18  ??? (libdispatch.dylib + 125852) [0x18ab47b9c]
+                18  ??? (libdispatch.dylib + 41272) [0x18ab33138]
+                  18  ??? (libdispatch.dylib + 122424) [0x18ab46e38]
+                    18  ??? (libdispatch.dylib + 112076) [0x18ab445cc]
+                      18  ??? (libxpc.dylib + 79180) [0x20d08254c]
+                        18  ??? (libxpc.dylib + 72040) [0x20d080968]
+                          18  ??? (Foundation + 106376) [0x181820f88]
+                            18  ??? (Foundation + 106728) [0x1818210e8]
+                              18  ??? (Foundation + 108132) [0x181821664]
+                                18  ??? (Foundation + 161032) [0x18182e508]
+                                  18  ??? (CoreFoundation + 192428) [0x182bbcfac]
+                                    18  ??? (CoreFoundation + 194868) [0x182bbd934]
+                                      18  ??? (ANECompilerService + 174664) [0x1045f2a48]
+                                        18  ??? (libdispatch.dylib + 71132) [0x18ab3a5dc]
+                                          18  ??? (libdispatch.dylib + 72524) [0x18ab3ab4c]
+                                            18  ??? (libdispatch.dylib + 112004) [0x18ab44584]
+                                              18  ??? (ANECompilerService + 176316) [0x1045f30bc]
+                                                18  ??? (ANECompilerService + 172292) [0x1045f2104]
+                                                  18  ??? (ANECompilerService + 166244) [0x1045f0964]
+                                                    18  ??? (ANECompiler + 2545100) [0x210b205cc]
+                                                      7   ??? (ANECompiler + 1783872) [0x210a66840]
+                                                        7   ??? (ANECompiler + 5395576) [0x210dd8478]
+                                                          3   ??? (ANECompiler + 3018664) [0x210b93fa8]
+                                                            3   ??? (ANECompiler + 2075988) [0x210aadd54]
+                                                              3   ??? (ANECompiler + 68564) [0x2108c3bd4]
+                                                                3   ??? (ANECompiler + 69148) [0x2108c3e1c]
+                                                                  3   ??? (ANECompiler + 148528) [0x2108d7430]
+                                                                    3   ??? (ANECompiler + 149892) [0x2108d7984]
+                                                                      3   ??? (ANECompiler + 2089648) [0x210ab12b0]
+                                                                        3   ??? (ANECompiler + 3472060) [0x210c02abc]
+                                                                          3   ??? (ANECompiler + 6050356) [0x210e78234]
+                                                                            3   ??? (ANECompiler + 2699148) [0x210b45f8c]
+                                                                              3   ??? (ANECompiler + 7392656) [0x210fbfd90]
+                                                                                2   ??? (ANECompiler + 7388060) [0x210fbeb9c]
+                                                                                  2   ??? (ANECompiler + 7391180) [0x210fbf7cc]
+                                                                                    2   ??? (ANECompiler + 4093676) [0x210c9a6ec]
+                                                                                      2   ??? (ANECompiler + 3664232) [0x210c31968]
+                                                                                        2   ??? (ANECompiler + 747496) [0x2109697e8]
+                                                                                          2   ??? (ANECompiler + 747596) [0x21096984c]
+                                                                                            2   ??? (ANECompiler + 747852) [0x21096994c]
+                                                                                              2   ??? (ANECompiler + 749848) [0x21096a118]
+                                                                                                2   ??? (libsystem_kernel.dylib + 33536) [0x1d3a01300]
+                                                                                                  2   <on behalf of UNKNOWN [358] (originated by UNKNOWN [31])>
+                                                                                1   ??? (ANECompiler + 7387848) [0x210fbeac8]
+                                                                                  1   ??? (libsystem_malloc.dylib + 75104) [0x19323f560]
+                                                                                    1   <on behalf of UNKNOWN [358] (originated by UNKNOWN [31])>
+                                                          3   ??? (ANECompiler + 3018192) [0x210b93dd0]
+                                                            2   ??? (ANECompiler + 4490932) [0x210cfb6b4]
+                                                              2   ??? (ANECompiler + 4488656) [0x210cfadd0]
+                                                                2   ??? (ANECompiler + 4486528) [0x210cfa580]
+                                                                  2   ??? (ANECompiler + 3061760) [0x210b9e800]
+                                                                    2   ??? (ANECompiler + 3062364) [0x210b9ea5c]
+                                                                      2   ??? (ANECompiler + 3051508) [0x210b9bff4]
+                                                                        2   ??? (ANECompiler + 3051888) [0x210b9c170]
+                                                                          2   ??? (ANECompiler + 3063452) [0x210b9ee9c]
+                                                                            2   ??? (ANECompiler + 3063568) [0x210b9ef10]
+                                                                              1   ??? (ANECompiler + 3056544) [0x210b9d3a0]
+                                                                                1   ??? (ANECompiler + 50680) [0x2108bf5f8]
+                                                                                  1   <on behalf of UNKNOWN [358] (originated by UNKNOWN [31])>
+                                                                              1   ??? (ANECompiler + 50680) [0x2108bf5f8]
+                                                                                1   <on behalf of UNKNOWN [358] (originated by UNKNOWN [31])>
+                                                            1   ??? (ANECompiler + 4491372) [0x210cfb86c]
+                                                              1   ??? (ANECompiler + 6288096) [0x210eb22e0]
+                                                                1   ??? (ANECompiler + 4239648) [0x210cbe120]
+                                                                  1   ??? (ANECompiler + 4239092) [0x210cbdef4]
+                                                                    1   ??? (ANECompiler + 4239424) [0x210cbe040]
+                                                                      1   ??? (ANECompiler + 6339616) [0x210ebec20]
+                                                                        1   ??? (ANECompiler + 6350024) [0x210ec14c8]
+                                                                          1   ??? (ANECompiler + 2094092) [0x210ab240c]
+                                                                            1   ??? (ANECompiler + 2094500) [0x210ab25a4]
+                                                                              1   ??? (ANECompiler + 2103056) [0x210ab4710]
+                                                                                1   ??? (ANECompiler + 2103320) [0x210ab4818]
+                                                                                  1   ??? (libsystem_malloc.dylib + 183296) [0x193259c00]
+                                                                                    1   <on behalf of UNKNOWN [358] (originated by UNKNOWN [31])>
+                                                          1   ??? (ANECompiler + 3016592) [0x210b93790]
+                                                            1   ??? (ANECompiler + 5664832) [0x210e1a040]
+                                                              1   ??? (ANECompiler + 5665108) [0x210e1a154]
+                                                                1   ??? (ANECompiler + 5679672) [0x210e1da38]
+                                                                  1   ??? (ANECompiler + 68564) [0x2108c3bd4]
+                                                                    1   ??? (ANECompiler + 69148) [0x2108c3e1c]
+                                                                      1   ??? (ANECompiler + 148528) [0x2108d7430]
+                                                                        1   ??? (ANECompiler + 149892) [0x2108d7984]
+                                                                          1   ??? (ANECompiler + 5727508) [0x210e29514]
+                                                                            1   ??? (ANECompiler + 5700260) [0x210e22aa4]
+                                                                              1   ??? (ANECompiler + 5677876) [0x210e1d334]
+                                                                                1   ??? (ANECompiler + 5670260) [0x210e1b574]
+                                                                                  1   ??? (ANECompiler + 5674276) [0x210e1c524]
+                                                                                    1   ??? (ANECompiler + 3472060) [0x210c02abc]
+                                                                                      1   ??? (ANECompiler + 6050356) [0x210e78234]
+                                                                                        1   ??? (ANECompiler + 2699148) [0x210b45f8c]
+                                                                                          1   ??? (ANECompiler + 7392656) [0x210fbfd90]
+                                                                                            1   ??? (ANECompiler + 7388060) [0x210fbeb9c]
+                                                                                              1   ??? (ANECompiler + 7391180) [0x210fbf7cc]
+                                                                                                1   ??? (ANECompiler + 4093676) [0x210c9a6ec]
+                                                                                                  1   ??? (ANECompiler + 3664232) [0x210c31968]
+                                                                                                    1   ??? (ANECompiler + 747496) [0x2109697e8]
+                                                                                                      1   ??? (ANECompiler + 747596) [0x21096984c]
+                                                                                                        1   ??? (ANECompiler + 747852) [0x21096994c]
+                                                                                                          1   ??? (libsystem_platform.dylib + 2968) [0x20cf79b98]
+                                                                                                            1   <on behalf of UNKNOWN [358] (originated by UNKNOWN [31]), Effective Thread QoS Background>
+                                                      4   ??? (ANECompiler + 1784064) [0x210a66900]
+                                                        4   ??? (ANECompiler + 5397012) [0x210dd8a14]
+                                                          4   ??? (ANECompiler + 7336488) [0x210fb2228]
+                                                            4   ??? (ANECompiler + 7337204) [0x210fb24f4]
+                                                              2   ??? (ANECompiler + 1726680) [0x210a588d8]
+                                                                2   ??? (ANECompiler + 1727524) [0x210a58c24]
+                                                                  2   ??? (ANECompiler + 1729276) [0x210a592fc]
+                                                                    2   ??? (ANECompiler + 1761544) [0x210a61108]
+                                                                      2   ??? (ANECompiler + 1756832) [0x210a5fea0]
+                                                                        2   ??? (ANECompiler + 3472060) [0x210c02abc]
+                                                                          2   ??? (ANECompiler + 6050356) [0x210e78234]
+                                                                            2   ??? (ANECompiler + 2699148) [0x210b45f8c]
+                                                                              1   ??? (ANECompiler + 7392728) [0x210fbfdd8]
+                                                                                1   ??? (ANECompiler + 7385032) [0x210fbdfc8]
+                                                                                  1   <on behalf of UNKNOWN [358] (originated by UNKNOWN [31])>
+                                                                              1   ??? (ANECompiler + 7392656) [0x210fbfd90]
+                                                                                1   ??? (ANECompiler + 7388060) [0x210fbeb9c]
+                                                                                  1   ??? (ANECompiler + 7391180) [0x210fbf7cc]
+                                                                                    1   ??? (ANECompiler + 4093676) [0x210c9a6ec]
+                                                                                      1   ??? (ANECompiler + 3664232) [0x210c31968]
+                                                                                        1   ??? (ANECompiler + 747496) [0x2109697e8]
+                                                                                          1   ??? (ANECompiler + 747596) [0x21096984c]
+                                                                                            1   ??? (ANECompiler + 747852) [0x21096994c]
+                                                                                              1   ??? (ANECompiler + 749848) [0x21096a118]
+                                                                                                1   ??? (libsystem_kernel.dylib + 33536) [0x1d3a01300]
+                                                                                                  1   <on behalf of UNKNOWN [358] (originated by UNKNOWN [31])>
+                                                              2   ??? (ANECompiler + 1726468) [0x210a58804]
+                                                                2   ??? (ANECompiler + 1327192) [0x2109f7058]
+                                                                  2   ??? (ANECompiler + 1327348) [0x2109f70f4]
+                                                                    2   ??? (ANECompiler + 1328148) [0x2109f7414]
+                                                                      2   ??? (ANECompiler + 3472060) [0x210c02abc]
+                                                                        1   ??? (ANECompiler + 6050976) [0x210e784a0]
+                                                                          1   ??? (libc++abi.dylib + 100312) [0x20cf577d8]
+                                                                            1   ??? (libsystem_malloc.dylib + 76700) [0x19323fb9c]
+                                                                              1   <on behalf of UNKNOWN [358] (originated by UNKNOWN [31])>
+                                                                        1   ??? (ANECompiler + 6050356) [0x210e78234]
+                                                                          1   ??? (ANECompiler + 7387008) [0x210fbe780]
+                                                                            1   ??? (ANECompiler + 7214168) [0x210f94458]
+                                                                              1   ??? (ANECompiler + 2980208) [0x210b8a970]
+                                                                                1   ??? (ANECompiler + 2977556) [0x210b89f14]
+                                                                                  1   ??? (ANECompiler + 7220756) [0x210f95e14]
+                                                                                    1   ??? (ANECompiler + 6123976) [0x210e8a1c8]
+                                                                                      1   ??? (ANECompiler + 1340896) [0x2109fa5e0]
+                                                                                        1   ??? (ANECompiler + 43504) [0x2108bd9f0]
+                                                                                          1   ??? (libsystem_malloc.dylib + 76564) [0x19323fb14]
+                                                                                            1   <on behalf of UNKNOWN [358] (originated by UNKNOWN [31])>
+                                                      4   ??? (ANECompiler + 1783920) [0x210a66870]
+                                                        4   ??? (ANECompiler + 5396076) [0x210dd866c]
+                                                          4   ??? (ANECompiler + 3061760) [0x210b9e800]
+                                                            3   ??? (ANECompiler + 3062364) [0x210b9ea5c]
+                                                              3   ??? (ANECompiler + 3051508) [0x210b9bff4]
+                                                                3   ??? (ANECompiler + 3051888) [0x210b9c170]
+                                                                  3   ??? (ANECompiler + 3063452) [0x210b9ee9c]
+                                                                    3   ??? (ANECompiler + 3063568) [0x210b9ef10]
+                                                                      2   ??? (ANECompiler + 3056544) [0x210b9d3a0]
+                                                                        1   ??? (ANECompiler + 3057144) [0x210b9d5f8]
+                                                                          1   <on behalf of UNKNOWN [358] (originated by UNKNOWN [31])>
+                                                                        1   ??? (ANECompiler + 50720) [0x2108bf620]
+                                                                          1   <on behalf of UNKNOWN [358] (originated by UNKNOWN [31])>
+                                                                      1   ??? (ANECompiler + 112996) [0x2108ce964]
+                                                                        1   <on behalf of UNKNOWN [358] (originated by UNKNOWN [31])>
+                                                            1   ??? (ANECompiler + 3062308) [0x210b9ea24]
+                                                              1   ??? (ANECompiler + 3049800) [0x210b9b948]
+                                                                1   ??? (ANECompiler + 4372560) [0x210cde850]
+                                                                  1   ??? (ANECompiler + 2590252) [0x210b2b62c]
+                                                                    1   ??? (ANECompiler + 463552) [0x2109242c0]
+                                                                      1   ??? (ANECompiler + 450728) [0x2109210a8]
+                                                                        1   <on behalf of UNKNOWN [358] (originated by UNKNOWN [31])>
+                                                      3   ??? (ANECompiler + 1784144) [0x210a66950]
+                                                        2   ??? (ANECompiler + 1782980) [0x210a664c4]
+                                                          2   ??? (ANECompiler + 4698904) [0x210d2e318]
+                                                            2   ??? (ANECompiler + 4693524) [0x210d2ce14]
+                                                              2   ??? (ANECompiler + 4685548) [0x210d2aeec]
+                                                                2   ??? (ANECompiler + 4676876) [0x210d28d0c]
+                                                                  2   ??? (ANECompiler + 4620880) [0x210d1b250]
+                                                                    1   ??? (ANECompiler + 4623824) [0x210d1bdd0]
+                                                                      1   ??? (ANECompiler + 4650552) [0x210d22638]
+                                                                        1   ??? (ANECompiler + 6002976) [0x210e6c920]
+                                                                          1   ??? (ANECompiler + 2141516) [0x210abdd4c]
+                                                                            1   ??? (ANECompiler + 68876) [0x2108c3d0c]
+                                                                              1   ??? (libsystem_malloc.dylib + 8952) [0x19322f2f8]
+                                                                                1   ??? (libsystem_kernel.dylib + 24204) [0x1d39fee8c]
+                                                                                  1   <on behalf of UNKNOWN [358] (originated by UNKNOWN [31])>
+                                                                    1   ??? (ANECompiler + 4622924) [0x210d1ba4c]
+                                                                      1   ??? (ANECompiler + 3466864) [0x210c01670]
+                                                                        1   ??? (ANECompiler + 3466464) [0x210c014e0]
+                                                                          1   ??? (ANECompiler + 7282672) [0x210fa4ff0]
+                                                                            1   <on behalf of UNKNOWN [358] (originated by UNKNOWN [31])>
+                                                        1   ??? (ANECompiler + 1782952) [0x210a664a8]
+                                                          1   ??? (ANECompiler + 4616580) [0x210d1a184]
+                                                            1   ??? (ANECompiler + 4615384) [0x210d19cd8]
+                                                              1   ??? (ANECompiler + 3472060) [0x210c02abc]
+                                                                1   ??? (ANECompiler + 6050356) [0x210e78234]
+                                                                  1   ??? (ANECompiler + 2699148) [0x210b45f8c]
+                                                                    1   ??? (ANECompiler + 7392656) [0x210fbfd90]
+                                                                      1   ??? (ANECompiler + 7388060) [0x210fbeb9c]
+                                                                        1   ??? (ANECompiler + 7391180) [0x210fbf7cc]
+                                                                          1   ??? (ANECompiler + 4093676) [0x210c9a6ec]
+                                                                            1   ??? (ANECompiler + 3664232) [0x210c31968]
+                                                                              1   ??? (ANECompiler + 747496) [0x2109697e8]
+                                                                                1   ??? (ANECompiler + 747596) [0x21096984c]
+                                                                                  1   ??? (ANECompiler + 747852) [0x21096994c]
+                                                                                    1   ??? (ANECompiler + 749848) [0x21096a118]
+                                                                                      1   ??? (libsystem_kernel.dylib + 33536) [0x1d3a01300]
+                                                                                        1   <on behalf of UNKNOWN [358] (originated by UNKNOWN [31])>
+
+  Binary Images:
+           0x1045c8000 -                ???  com.apple.ANECompilerService (1) <01E5E2CF-0186-31D4-8679-4AD46649F384>  /System/Library/PrivateFrameworks/AppleNeuralEngine.framework/XPCServices/ANECompilerService.xpc/ANECompilerService
+           0x181807000 -        0x18247b05f  Foundation                       <C031896B-2EF1-3D89-966A-0B52D54BCEEE>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x182b8e000 -        0x18310afff  CoreFoundation                   <AE3C9338-0166-397A-9643-356B14F6EE58>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x18ab29000 -        0x18ab6eb3f  libdispatch.dylib                <B62778F7-5827-3A7B-A96D-A24F7BE95416>  /usr/lib/system/libdispatch.dylib
+           0x19322d000 -        0x19326cfef  libsystem_malloc.dylib           <23C37642-B23B-34A8-BD54-2AC0B5F36047>  /usr/lib/system/libsystem_malloc.dylib
+           0x1d39f9000 -        0x1d3a32ebf  libsystem_kernel.dylib           <A9A7ECBD-24DD-37E6-BB23-ECBFD9A87E33>  /usr/lib/system/libsystem_kernel.dylib
+           0x20cf3f000 -        0x20cf5cfff  libc++abi.dylib                  <B5A6ECCE-F205-302A-8874-755A0E3AD747>  /usr/lib/libc++abi.dylib
+           0x20cf79000 -        0x20cf808cf  libsystem_platform.dylib         <B6BBE54E-920D-32E6-B271-281A8E395551>  /usr/lib/system/libsystem_platform.dylib
+           0x20d024000 -        0x20d0303f3  libsystem_pthread.dylib          <1EE19220-0859-3CBC-BDEB-DF37CA2E8E4F>  /usr/lib/system/libsystem_pthread.dylib
+           0x20d06f000 -        0x20d0b6dbf  libxpc.dylib                     <6E4F2F21-192A-30E8-A3AD-9915ADD1EBD2>  /usr/lib/system/libxpc.dylib
+           0x2108b3000 -        0x211c4323f  ANECompiler                      <E598574C-F297-38EB-BA8C-F5F8747AEBB6>  /System/Library/PrivateFrameworks/ANECompiler.framework/ANECompiler
